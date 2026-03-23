@@ -15,6 +15,28 @@ This skill generates production-ready content immediately. When you say "write m
 
 ---
 
+## Output: Saving Results
+
+**All generated content MUST be saved to a `results/` folder** in the project root directory.
+
+When creating content, follow this process:
+1. Create the `results/` directory if it doesn't exist
+2. Save each piece of content to a file named with a date-timestamp format:
+   - Format: `results/YYYY-MM-DD_HH-MM_[platform]_[topic-slug].md`
+   - Example: `results/2026-03-23_14-30_linkedin_ai-board-of-advisors-launch.md`
+   - Example: `results/2026-03-23_14-30_tiktok_devil-advocate-demo-script.md`
+   - Example: `results/2026-03-23_14-30_twitter_thread-on-ai-agents.md`
+3. Each results file should contain:
+   - The platform it's written for
+   - All versions/variants generated
+   - Any hashtag suggestions
+   - Posting time recommendations (if applicable)
+   - Image/visual notes (if applicable)
+
+This ensures all generated content is organized, timestamped, and easy to find later. Never output content only to the chat — always save to `results/` as well.
+
+---
+
 ## 1. Before Creating Content (Context Gathering)
 
 Quick checklist before generating. Keep it lightweight—ask only what's needed.

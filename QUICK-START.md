@@ -49,8 +49,8 @@ That's enough to get started. You can add more later.
 ### Claude Code (Developers)
 
 ```bash
-git clone https://github.com/eugworld/enhanced-ourselves-skills.git
-cp -r enhanced-ourselves-skills/* ~/.claude/skills/
+git clone https://github.com/eugworld/board-of-advisors.git
+cp -r board-of-advisors/* ~/.claude/skills/
 ```
 
 Skills load automatically in your next Claude Code session.

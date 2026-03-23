@@ -1,4 +1,4 @@
-# Enhanced Ourselves: AI Board of Advisors
+# AI Board of Advisors
 
 **8 AI experts that challenge your thinking before helping you build.**
 
@@ -45,7 +45,7 @@ Each advisor challenges you from a different angle, catches what you'd miss, and
 
 ## What Makes This Different From "Just Prompting"
 
-| Regular AI Prompts | Enhanced Ourselves |
+| Regular AI Prompts | Board of Advisors |
 |---|---|
 | You write a new prompt every conversation | Skills load automatically, every time |
 | AI agrees with everything | AI challenges you FIRST, then helps build |
@@ -112,13 +112,13 @@ If you use Claude Code (Anthropic's CLI tool):
 
 ```bash
 # Clone the repo
-git clone https://github.com/eugworld/enhanced-ourselves-skills.git
+git clone https://github.com/eugworld/board-of-advisors.git
 
 # Copy into your Claude Code skills directory
-cp -r enhanced-ourselves-skills/* ~/.claude/skills/
+cp -r board-of-advisors/* ~/.claude/skills/
 
 # Or add to a specific project
-cp -r enhanced-ourselves-skills/* your-project/.claude/skills/
+cp -r board-of-advisors/* your-project/.claude/skills/
 ```
 
 Next time you run Claude Code, the skills are available automatically.
@@ -134,7 +134,7 @@ Next time you run Claude Code, the skills are available automatically.
 ## What's Included
 
 ```
-enhanced-ourselves-skills/
+board-of-advisors/
 ├── README.md                          ← You're reading this
 ├── QUICK-START.md                     ← 2-minute setup for any AI platform
 ├── persona-template.md                ← Fill this in to create your persona

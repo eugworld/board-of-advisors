@@ -2,6 +2,9 @@
 persona.md
 linkedin-post-drafts.md
 
+# Generated content output
+results/
+
 # OS files
 .DS_Store
 Thumbs.db
