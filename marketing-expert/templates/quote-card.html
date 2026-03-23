@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quote/Insight Card</title>
+    <!--
+      BRAND COLORS: Edit the CSS variables below to match your persona.md brand colors.
+      Default: #2ABFAB (teal). Change --brand-color to your brand color.
+    -->
+    <!-- Edit the text below to customize. Open in browser and screenshot for social media. -->
+    <style>
+        :root {
+            --brand-color: #2ABFAB;
+            --text-dark: #1a1a1a;
+            --text-light: #666666;
+            --bg-white: #ffffff;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            width: 1080px;
+            height: 1080px;
+            background: linear-gradient(135deg, var(--bg-white) 0%, #f9f9f9 100%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 60px 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .accent-circle {
+            position: absolute;
+            width: 400px;
+            height: 400px;
+            background-color: var(--brand-color);
+            opacity: 0.08;
+            border-radius: 50%;
+            top: -100px;
+            right: -100px;
+        }
+
+        .accent-circle-2 {
+            position: absolute;
+            width: 300px;
+            height: 300px;
+            background-color: var(--brand-color);
+            opacity: 0.05;
+            border-radius: 50%;
+            bottom: -80px;
+            left: -80px;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .quotation-mark {
+            font-size: 120px;
+            color: var(--brand-color);
+            line-height: 0.8;
+            margin-bottom: 10px;
+        }
+
+        .quote {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.4;
+            max-width: 900px;
+            letter-spacing: -0.5px;
+        }
+
+        .attribution {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background-color: var(--brand-color);
+            border-radius: 2px;
+        }
+
+        .attribution-text {
+            font-size: 16px;
+            color: var(--text-light);
+            font-weight: 500;
+        }
+
+        .attribution-name {
+            font-size: 14px;
+            color: var(--brand-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="accent-circle"></div>
+        <div class="accent-circle-2"></div>
+
+        <div class="content">
+            <div class="quotation-mark">"</div>
+
+            <h2 class="quote">
+                The best marketing doesn't feel like marketing.
+            </h2>
+
+            <div class="attribution">
+                <div class="divider"></div>
+                <p class="attribution-text">Great marketing is about building trust and providing value before asking for the sale.</p>
+                <p class="attribution-name">— Marketing Wisdom</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

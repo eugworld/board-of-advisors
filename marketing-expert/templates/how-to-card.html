@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How-To Card</title>
+    <!--
+      BRAND COLORS: Edit the CSS variables below to match your persona.md brand colors.
+      Default: #2ABFAB (teal). Change --brand-color to your brand color.
+    -->
+    <!-- Edit the text below to customize. Open in browser and screenshot for social media. -->
+    <style>
+        :root {
+            --brand-color: #2ABFAB;
+            --text-dark: #1a1a1a;
+            --text-light: #666666;
+            --bg-white: #ffffff;
+            --bg-light: #f9f9f9;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            width: 1080px;
+            height: 1350px;
+            background: linear-gradient(to bottom, var(--bg-white) 0%, var(--bg-light) 100%);
+            display: flex;
+            flex-direction: column;
+            padding: 50px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .brand-bar {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background-color: var(--brand-color);
+        }
+
+        .header {
+            margin-bottom: 50px;
+            margin-top: 20px;
+        }
+
+        .tag {
+            font-size: 12px;
+            font-weight: 700;
+            color: var(--brand-color);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+        }
+
+        .title {
+            font-size: 48px;
+            font-weight: 700;
+            color: var(--text-dark);
+            line-height: 1.2;
+        }
+
+        .steps {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+            flex: 1;
+            margin-bottom: 50px;
+        }
+
+        .step {
+            display: flex;
+            gap: 25px;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 60px;
+            height: 60px;
+            background-color: var(--brand-color);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 28px;
+            font-weight: 700;
+            box-shadow: 0 4px 15px rgba(42, 191, 171, 0.25);
+        }
+
+        .step-content {
+            flex: 1;
+            padding-top: 8px;
+        }
+
+        .step-title {
+            font-size: 22px;
+            font-weight: 700;
+            color: var(--text-dark);
+            margin-bottom: 10px;
+        }
+
+        .step-description {
+            font-size: 16px;
+            color: var(--text-light);
+            line-height: 1.6;
+        }
+
+        .cta-section {
+            background-color: var(--brand-color);
+            color: white;
+            padding: 40px;
+            border-radius: 12px;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .cta-text {
+            font-size: 20px;
+            font-weight: 700;
+        }
+
+        .cta-subtext {
+            font-size: 14px;
+            opacity: 0.95;
+        }
+
+        .footer-dots {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .dot {
+            width: 8px;
+            height: 8px;
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+        }
+
+        .dot.active {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="brand-bar"></div>
+
+        <div class="header">
+            <p class="tag">Step-by-Step Guide</p>
+            <h1 class="title">How to Create a Marketing Campaign That Converts</h1>
+        </div>
+
+        <div class="steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">Define Your Audience</h3>
+                    <p class="step-description">Identify who you're trying to reach. Create detailed buyer personas with demographics, behaviors, and pain points.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">Set Clear Goals</h3>
+                    <p class="step-description">What's the objective? Brand awareness, leads, sales? Use SMART goals to track success measurably.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">Choose Your Channels</h3>
+                    <p class="step-description">Pick where your audience spends time. Email, social, content, ads, or a combination for multi-channel reach.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3 class="step-title">Create & Test</h3>
+                    <p class="step-description">Develop compelling messaging and test variations. A/B test copy, visuals, and calls-to-action for best results.</p>
+                </div>
+            </div>
+
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-content">
+                    <h3 class="step-title">Measure & Optimize</h3>
+                    <p class="step-description">Track metrics that matter. Analyze what works, iterate quickly, and continuously improve your approach.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <p class="cta-text">Ready to Build Your Campaign?</p>
+            <p class="cta-subtext">Follow these steps and watch your results improve</p>
+            <div class="footer-dots">
+                <div class="dot active"></div>
+                <div class="dot"></div>
+                <div class="dot"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
